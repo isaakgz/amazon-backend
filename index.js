@@ -16,6 +16,7 @@ app.get("/isaak", (request, response) => response.status(200).send("Evangadi"));
 
 app.post("/payments/create", async (request, response) => {
   const total = request.query.total;
+  
 
   if (total > 0) {
     const payementIntent = await stripe.paymentIntents.create({
