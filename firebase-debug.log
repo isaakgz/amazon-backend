@@ -239,3 +239,232 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 
 [info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
 [debug] [2023-10-11T09:56:15.986Z] File E:\evangadi\phase3\projecct week\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-11T09:56:16.991Z] Validating nodejs source
+[debug] [2023-10-11T09:56:19.763Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-11T09:56:19.764Z] Building nodejs source
+[debug] [2023-10-11T09:56:19.764Z] Failed to find version of module node: reached end of search path E:\evangadi\phase3\projecct week\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-10-11T09:56:19.766Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-11T09:56:19.771Z] Found firebase-functions binary at 'E:\evangadi\phase3\projecct week\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8784
+
+[debug] [2023-10-11T09:56:20.978Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-10-11T09:56:42.899Z] [work-queue] {"queuedWork":["/my-amzon-clone-fc9f5/us-central1/api/payments/create-2023-10-11T09:56:42.899Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-11T09:56:42.900Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/my-amzon-clone-fc9f5/us-central1/api/payments/create-2023-10-11T09:56:42.899Z"],"workRunningCount":1}
+[debug] [2023-10-11T09:56:42.900Z] Accepted request POST /my-amzon-clone-fc9f5/us-central1/api/payments/create?total=5800 --> us-central1-api
+[debug] [2023-10-11T09:56:42.906Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-11T09:56:42.907Z] [functions] Got req.url=/my-amzon-clone-fc9f5/us-central1/api/payments/create?total=5800, mapping to path=/payments/create?total=5800 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/my-amzon-clone-fc9f5/us-central1/api/payments/create?total=5800, mapping to path=/payments/create?total=5800"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-10-11T09:56:43.026Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-10-11T09:56:43.046Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-10-11T09:56:43.049Z] [work-queue] {"queuedWork":["/my-amzon-clone-fc9f5/us-central1/api/payments/create-2023-10-11T09:56:43.049Z"],"queueLength":1,"runningWork":["/my-amzon-clone-fc9f5/us-central1/api/payments/create-2023-10-11T09:56:42.899Z"],"workRunningCount":1}
+[debug] [2023-10-11T09:56:43.050Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/my-amzon-clone-fc9f5/us-central1/api/payments/create-2023-10-11T09:56:42.899Z","/my-amzon-clone-fc9f5/us-central1/api/payments/create-2023-10-11T09:56:43.049Z"],"workRunningCount":2}
+[debug] [2023-10-11T09:56:43.050Z] Accepted request POST /my-amzon-clone-fc9f5/us-central1/api/payments/create?total=5800 --> us-central1-api
+[debug] [2023-10-11T09:56:43.052Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-11T09:56:43.052Z] [functions] Got req.url=/my-amzon-clone-fc9f5/us-central1/api/payments/create?total=5800, mapping to path=/payments/create?total=5800 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/my-amzon-clone-fc9f5/us-central1/api/payments/create?total=5800, mapping to path=/payments/create?total=5800"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-10-11T09:56:43.071Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-10-11T09:56:43.071Z] [worker-pool] Adding worker with key us-central1-api, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=2"}}
+[debug] [2023-10-11T09:56:45.509Z] [runtime-status] [65816] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:45.512Z] [runtime-status] [65816] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:45.513Z] [runtime-status] [65816] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-10-11T09:56:45.515Z] [runtime-status] [65816] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:45.531Z] [runtime-status] [65868] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:45.534Z] [runtime-status] [65868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:45.535Z] [runtime-status] [65868] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-10-11T09:56:45.537Z] [runtime-status] [65868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:46.071Z] [runtime-status] [65816] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-10-11T09:56:46.071Z] [runtime-status] [65816] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-10-11T09:56:46.073Z] [runtime-status] [65816] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:46.075Z] [runtime-status] [65816] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:46.093Z] [runtime-status] [65868] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-10-11T09:56:46.094Z] [runtime-status] [65868] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-10-11T09:56:46.095Z] [runtime-status] [65868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:46.115Z] [runtime-status] [65868] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:46.139Z] [runtime-status] [65816] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:46.139Z] [runtime-status] [65868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-11T09:56:46.139Z] [runtime-status] [65868] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.0","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-10-11T09:56:46.140Z] [runtime-status] [65816] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.0","resolution":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-10-11T09:56:46.622Z] [runtime-status] [65816] Functions runtime initialized. {"cwd":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] Functions runtime initialized. {\"cwd\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-10-11T09:56:46.622Z] [runtime-status] [65868] Functions runtime initialized. {"cwd":"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] Functions runtime initialized. {\"cwd\":\"E:\\\\evangadi\\\\phase3\\\\projecct week\\\\amazon-clone\\\\functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-10-11T09:56:46.622Z] [runtime-status] [65816] Listening to port: \\?\pipe\fire_emu_9386cf3ffd82cb34 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65816] Listening to port: \\\\?\\pipe\\fire_emu_9386cf3ffd82cb34"}}
+[debug] [2023-10-11T09:56:46.623Z] [runtime-status] [65868] Listening to port: \\?\pipe\fire_emu_5b2f3a82d29e2843 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [65868] Listening to port: \\\\?\\pipe\\fire_emu_5b2f3a82d29e2843"}}
+[debug] [2023-10-11T09:56:46.670Z] [worker-us-central1-api-9e4d68e6-f01d-408b-bddf-3a39903276bc]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-9e4d68e6-f01d-408b-bddf-3a39903276bc]: IDLE"}}
+[debug] [2023-10-11T09:56:46.670Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-11T09:56:46.672Z] [worker-us-central1-api-9e4d68e6-f01d-408b-bddf-3a39903276bc]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-9e4d68e6-f01d-408b-bddf-3a39903276bc]: BUSY"}}
+[debug] [2023-10-11T09:56:46.681Z] [worker-us-central1-api-655ca4b2-572c-4237-be24-670e328c9747]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-655ca4b2-572c-4237-be24-670e328c9747]: IDLE"}}
+[debug] [2023-10-11T09:56:46.681Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-11T09:56:46.682Z] [worker-us-central1-api-655ca4b2-572c-4237-be24-670e328c9747]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-655ca4b2-572c-4237-be24-670e328c9747]: BUSY"}}
+[debug] [2023-10-11T09:56:47.896Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 1213.8493ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1213.8493ms"}}
+[debug] [2023-10-11T09:56:47.897Z] [worker-us-central1-api-655ca4b2-572c-4237-be24-670e328c9747]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-655ca4b2-572c-4237-be24-670e328c9747]: IDLE"}}
+[debug] [2023-10-11T09:56:47.897Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-11T09:56:47.897Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-11T09:56:47.897Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/my-amzon-clone-fc9f5/us-central1/api/payments/create-2023-10-11T09:56:42.899Z"],"workRunningCount":1}
+[debug] [2023-10-11T09:56:47.898Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 1225.6312ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1225.6312ms"}}
+[debug] [2023-10-11T09:56:47.899Z] [worker-us-central1-api-9e4d68e6-f01d-408b-bddf-3a39903276bc]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-9e4d68e6-f01d-408b-bddf-3a39903276bc]: IDLE"}}
+[debug] [2023-10-11T09:56:47.899Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-11T09:56:47.899Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-11T09:56:47.899Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] >  payement request recived for this amount >>>>>>> 5800 {"user":"payement request recived for this amount >>>>>>> 5800","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m payement request recived for this amount >>>>>>> 5800"}}
+[info] >  payement request recived for this amount >>>>>>> 5800 {"user":"payement request recived for this amount >>>>>>> 5800","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m payement request recived for this amount >>>>>>> 5800"}}
+[debug] [2023-10-11T10:19:21.108Z] File E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-10-11T10:19:22.117Z] Validating nodejs source
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ Unexpected token 'b' at 11:6
+    "build"
+     ^
+File: "E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json" {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n Unexpected token 'b' at 11:6\n    \"build\"\n     ^\nFile: \"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json\""}}
+[debug] [2023-10-11T10:19:25.552Z] File E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-10-11T10:19:26.564Z] Validating nodejs source
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ Unexpected token 'b' at 11:6
+    "build"
+     ^
+File: "E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json" {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n Unexpected token 'b' at 11:6\n    \"build\"\n     ^\nFile: \"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json\""}}
+[debug] [2023-10-11T10:19:33.042Z] File E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-10-11T10:19:34.058Z] Validating nodejs source
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ Unexpected token 'b' at 11:6
+    "build":
+     ^
+File: "E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json" {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n Unexpected token 'b' at 11:6\n    \"build\":\n     ^\nFile: \"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json\""}}
+[debug] [2023-10-11T10:19:37.192Z] File E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-10-11T10:19:38.209Z] Validating nodejs source
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ Unexpected token 'b' at 11:6
+    "build" : 
+     ^
+File: "E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json" {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n Unexpected token 'b' at 11:6\n    \"build\" : \n     ^\nFile: \"E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json\""}}
+[debug] [2023-10-11T10:19:42.079Z] File E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-10-11T10:19:43.093Z] Validating nodejs source
+[debug] [2023-10-11T10:19:45.856Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "build": ""
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-11T10:19:45.857Z] Building nodejs source
+[debug] [2023-10-11T10:19:45.857Z] Failed to find version of module node: reached end of search path E:\evangadi\phase3\projecct week\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-10-11T10:19:45.859Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-11T10:19:45.865Z] Found firebase-functions binary at 'E:\evangadi\phase3\projecct week\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-10-11T10:19:45.880Z] File E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json changed, reloading triggers"}}
+[info] Serving at port 8677
+
+[debug] [2023-10-11T10:19:46.890Z] Validating nodejs source
+[debug] [2023-10-11T10:19:49.689Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "build": "npm i"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-11T10:19:49.690Z] Building nodejs source
+[debug] [2023-10-11T10:19:49.690Z] Failed to find version of module node: reached end of search path E:\evangadi\phase3\projecct week\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-10-11T10:19:49.697Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-10-11T10:19:49.698Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-11T10:19:49.702Z] Found firebase-functions binary at 'E:\evangadi\phase3\projecct week\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-10-11T10:19:49.727Z] File E:\evangadi\phase3\projecct week\amazon-clone\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\evangadi\\phase3\\projecct week\\amazon-clone\\functions\\package.json changed, reloading triggers"}}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-10-11T10:19:49.757Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-10-11T10:19:49.757Z] [worker-us-central1-api-9e4d68e6-f01d-408b-bddf-3a39903276bc]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-9e4d68e6-f01d-408b-bddf-3a39903276bc]: FINISHING"}}
+[debug] [2023-10-11T10:19:49.758Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-10-11T10:19:49.758Z] [worker-us-central1-api-655ca4b2-572c-4237-be24-670e328c9747]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-655ca4b2-572c-4237-be24-670e328c9747]: FINISHING"}}
