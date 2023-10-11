@@ -4,9 +4,7 @@ require("dotenv").config();
 // const logger = require("firebase-functions/logger");
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")(
-  "sk_test_51NwjmXDLellSq864XgxT0hqqYB4VuxyM2z0JZuAJLSqSY8PEkMulXQ3che5CF2sgZm0BepkAnnLsrFZ3hy5DzDft00Xu4StqJj"
-);
+const stripe = require("stripe")("sk_test_51NwjmXDLellSq864XgxT0hqqYB4VuxyM2z0JZuAJLSqSY8PEkMulXQ3che5CF2sgZm0BepkAnnLsrFZ3hy5DzDft00Xu4StqJj");
 
 const app = express();
 app.use(cors());
